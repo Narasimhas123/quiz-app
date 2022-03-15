@@ -25,7 +25,7 @@ function check() {
         total++;
     }
 
-    finalcall.textContent = "Final Call";
+    finalcall.innerHTML= "Final Call";
     finalcall.style.background = "white";
     finalcall.style.textAlign = "center";
     finalcall.style.fontSize = "larger";
@@ -34,20 +34,20 @@ function check() {
     result.style.padding = "10px";
     result.style.fontSize = "bolder";
     if (total >= 4) {
-        result.textContent = "Yes";
+        result.innerHTML = "Yes";
         result.style.fontSize = "larger";
         result.style.fontSize = "bolder";
         result.style.color = "white";
         result.style.background = "green";
     }
     if ((total <= 3) && (total >= 2)) {
-        result.textContent = "Maybe";
+        result.innerHTML = "Maybe";
         result.style.fontSize = "larger";
         result.style.fontSize = "bolder";
         result.style.background = "violet";
     }
     if (total === 1 || total === 0) {
-        result.textContent = "NO";
+        result.innerHTML = "NO";
         result.style.fontSize = "larger";
         result.style.fontSize = "bolder";
         result.style.background = "red";
